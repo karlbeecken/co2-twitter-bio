@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/karlbeecken/co2-twitter-bio#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "twitter-lite": "^0.14.0"
   }
