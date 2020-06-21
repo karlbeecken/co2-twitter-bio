@@ -1,0 +1,20 @@
+name: Update bio with current CO2
+on:
+  schedule:
+    - cron: "1 0 * * *" # every day at 1 am
+  push:
+    branches: master # on push
+jobs:
+  update-bio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: npm install
+      - name: Update bio
+        uses: ./
+        env:
+          CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+          CONSUMER_KEY_SECRET: ${{ secrets.CONSUMER_KEY_SECRET }}
+          ACCESS_TOKEN_KEY: ${{ secrets.ACCESS_TOKEN_KEY }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          DESCRIPTION: ${{ secrets.DESCRIPTION }}

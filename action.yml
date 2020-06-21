@@ -1,0 +1,11 @@
+name: co2-twitter-bio
+author: Karl Beecken
+description: GitHub Action for updating your Twitter bio with the current CO2 level
+
+runs:
+  using: node12
+  main: ./index.js
+
+branding:
+  icon: power
+  color: green

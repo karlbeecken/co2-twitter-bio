@@ -14,9 +14,11 @@ const client = new Twitter({
 axios.get('http://www.hqcasanova.com/co2/')
   .then(function (rsp) {
     console.log("current:", rsp.data)
+    let newBio = process.env.DESCRIPTION + " " + rsp.data
+    console.log("this bio will be set:", newBio)
     client
     .post("account/update_profile", {
-      description: process.env.DESCRIPTION + " " + rsp.data
+      description: newBio
     })
     .then(results => {
       console.log("new bio:", results.description)
