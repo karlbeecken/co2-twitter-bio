@@ -1,0 +1,23 @@
+{
+  "name": "co2-twitter-bio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlbeecken/co2-twitter-bio.git"
+  },
+  "author": "Karl Beecken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karlbeecken/co2-twitter-bio/issues"
+  },
+  "homepage": "https://github.com/karlbeecken/co2-twitter-bio#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twitter-lite": "^0.14.0"
+  }
+}
