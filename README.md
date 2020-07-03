@@ -17,7 +17,7 @@ You'll have to save them into GitHub Actions Secrets with the following names:
 
 Then you have to create another secret called `DESCRIPTION` with your desired Twitter bio. It should end with something like "current co2 level:" as the current atmospheric CO2 level will be appended at the end.
 
-For example my bio template looks like this: "/dev/null | climate activist @FridayForFuture | born at 379ppm – currently".
+For example my bio template looks like this: "/dev/null | climate activist @FridayForFuture | born at 379ppm – currently"
 
 **Note**: you don't need to append a space to the end of the `DESCRIPTION` secret, as the bot does this for you automatically
 
