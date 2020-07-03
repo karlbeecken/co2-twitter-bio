@@ -19,6 +19,6 @@ Then you have to create another secret called `DESCRIPTION` with your desired Tw
 
 For example my bio template looks like this: "/dev/null | climate activist @FridayForFuture | born at 379ppm – currently".
 
-**Note**: you don't need to append a space to the end of the `DESCRIPTION` secret, as the bot does this for you automatically.
+**Note**: you don't need to append a space to the end of the `DESCRIPTION` secret, as the bot does this for you automatically
 
 That's it! 🎉 Now every day at 1 am your Twitter bio should update with the current atmospheric CO2 level informing other people about climate change. 🔥
