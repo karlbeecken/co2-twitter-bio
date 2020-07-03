@@ -6,7 +6,9 @@
 ## Usage
 To use this Twitter bot you'll need a Twitter developer account. Apply for one here: https://developer.twitter.com/en/apply-for-access
 
-Then you will need to create a new app with consumer key, consumer secret, access token key and access token secret.
+Then you will need to create a new app and set the app Permissions to **Read and Write**. You will need the following keys: <br>
+*consumer key*, *consumer key secret*, *access token key* and *access token secret*
+(consumer keys may also be labeled as API key)
 
 You'll have to save them into GitHub Actions Secrets with the following names:
 
@@ -17,8 +19,8 @@ You'll have to save them into GitHub Actions Secrets with the following names:
 
 Then you have to create another secret called `DESCRIPTION` with your desired Twitter bio. It should end with something like "current co2 level:" as the current atmospheric CO2 level will be appended at the end.
 
-For example my bio template looks like this: "/dev/null | climate activist @FridayForFuture | born at 379ppm – currently".
+For example my bio template looks like this: "/dev/null | climate activist @FridayForFuture | born at 379ppm – currently"
 
-**Note**: you don't need to append a space to the end of the `DESCRIPTION` secret, as the bot does this for you automatically.
+**Note**: you don't need to append a space to the end of the `DESCRIPTION` secret, as the bot does this for you automatically
 
-That's it! 🎉 Now every day at 1 am your Twitter bio should update with the current atmospheric CO2 level informing other people about climate change. 🔥
+That's it! 🎉 Now every day at 1 am your Twitter bio should update with the current atmospheric CO2 level informing other people about climate change 🔥
