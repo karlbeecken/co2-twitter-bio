@@ -6,7 +6,9 @@
 ## Usage
 To use this Twitter bot you'll need a Twitter developer account. Apply for one here: https://developer.twitter.com/en/apply-for-access
 
-Then you will need to create a new app with consumer key, consumer secret, access token key and access token secret.
+Then you will need to create a new app and set the app Permissions to **Read and Write**. You will need the following keys: <br>
+*consumer key*, *consumer key secret*, *access token key* and *access token secret*
+(consumer keys may also be labeled as API key)
 
 You'll have to save them into GitHub Actions Secrets with the following names:
 
