@@ -2,6 +2,8 @@ require('dotenv').config()
 const Twitter = require('twitter-lite')
 const axios = require('axios')
 
+const target = process.env.TARGET || "description"
+
 const client = new Twitter({
     subdomain: "api", // "api" is the default (change for other subdomains)
     version: "1.1", // version "1.1" is the default (change for other subdomains)
@@ -15,15 +17,14 @@ axios.get('http://www.hqcasanova.com/co2/')
   .then(function (rsp) {
     console.log("current:", rsp.data)
     let newBio = process.env.DESCRIPTION + " " + rsp.data
-    console.log("this bio will be set:", newBio)
+    console.log(`this ${target === "description" ? "bio" : "location"} will be set:`, newBio)
     client
     .post("account/update_profile", {
-      description: newBio
+      [target]: newBio
     })
     .then(results => {
-      console.log("new bio:", results.description)
+      console.log(`new ${target === "description" ? "bio" : "location"}:`, results[target])
     })
     .catch(console.error)
   })
   .catch(console.error)
-
