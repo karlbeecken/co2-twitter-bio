@@ -6,6 +6,8 @@
 ## Usage
 To use this Twitter bot you'll need a Twitter developer account. Apply for one here: https://developer.twitter.com/en/apply-for-access
 
+_Hint: If you tell Twitter that you only want to use the API for educational purposes, you'll usually get access without further questions 🤫'_
+
 Then you will need to create a new app and set the app Permissions to **Read and Write**. You will need the following keys: <br>
 *consumer key*, *consumer key secret*, *access token key* and *access token secret*
 (consumer keys may also be labeled as API key)
